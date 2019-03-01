@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "289357060021",
+    "firebase_url": "https://cloudfirestoreproject-cbbff.firebaseio.com",
+    "project_id": "cloudfirestoreproject-cbbff",
+    "storage_bucket": "cloudfirestoreproject-cbbff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289357060021:android:442c32941fb8b7da",
+        "android_client_info": {
+          "package_name": "luonga.petsitter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289357060021-fhgt9l1ma6lel26fjblisgb4jrngj7bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "luonga.petsitter",
+            "certificate_hash": "1bae8700235b4cfb51f50404f8473e69eccfdf49"
+          }
+        },
+        {
+          "client_id": "289357060021-0460rn2oscmbf92i6qmpk0gfs46bsb3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC0ngBjB42e14xvT_J5HIaMFJ6K2B9LZ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289357060021-0460rn2oscmbf92i6qmpk0gfs46bsb3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

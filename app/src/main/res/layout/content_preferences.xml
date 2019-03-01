@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luonga.petsitter.PreferencesActivity"
+    tools:showIn="@layout/activity_preferences">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblListOptionsPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strWhenListingPetsIncludePrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/chkBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:checked="true"
+            android:text="@string/strBreedSpecies"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblListOptionsPrompt" />
+
+        <TextView
+            android:id="@+id/lblSortPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strSortPetsPrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chkBreed" />
+
+        <RadioGroup
+            android:id="@+id/rgrpSort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:divider="?android:attr/dividerHorizontal"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblSortPrompt">
+
+            <RadioButton
+                android:id="@+id/rbtnAZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/strAZTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/rbtnZA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_md"
+                android:checked="false"
+                android:text="@string/strZATitle"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblNotifyPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strNotificationsPrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgrpSort" />
+
+        <CheckBox
+            android:id="@+id/chkWarnDeletePet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:checked="true"
+            android:text="@string/strWarnBeforeDeletingAPet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="@string/strOff"
+            android:textOn="@string/strOn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblNotifyPrompt" />
+
+        <CheckBox
+            android:id="@+id/chkWarnDeleteVet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:checked="true"
+            android:text="@string/strWarnBeforeDeletingAVet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="@string/strOff"
+            android:textOn="@string/strOn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chkWarnDeletePet" />
+
+        <CheckBox
+            android:id="@+id/chkWarnDeleteClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:checked="true"
+            android:text="@string/strWarnBeforeDeletingAClient"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textOff="@string/strOff"
+            android:textOn="@string/strOn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chkWarnDeleteVet" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

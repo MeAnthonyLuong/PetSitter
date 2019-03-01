@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luonga.petsitter.PetDetailsActivity"
+    tools:showIn="@layout/activity_pet_details">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lblNamePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strNamePrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/imgPet"
+            app:layout_constraintStart_toEndOf="@+id/lblNamePrompt"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="pet-name" />
+
+        <TextView
+            android:id="@+id/lblBirthYearPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strBirthYearPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblName" />
+
+        <TextView
+            android:id="@+id/lblBirthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@id/imgPet"
+            app:layout_constraintStart_toEndOf="@+id/lblBirthYearPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblName"
+            tools:text="xxxx" />
+
+        <TextView
+            android:id="@+id/lblSpeciesBreedPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strSpeciesBreedPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblBirthYear" />
+
+        <TextView
+            android:id="@+id/lblSpeciesBreed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/imgPet"
+            app:layout_constraintStart_toEndOf="@+id/lblSpeciesBreedPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblBirthYear"
+            tools:text="species/breed" />
+
+        <TextView
+            android:id="@+id/lblGenderPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strGenderPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblSpeciesBreed" />
+
+        <TextView
+            android:id="@+id/lblGender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/imgPet"
+            app:layout_constraintStart_toEndOf="@+id/lblGenderPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblSpeciesBreed"
+            tools:text="male/female" />
+
+        <TextView
+            android:id="@+id/lblCareInstructionsPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strCareInstructionsPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblGender" />
+
+        <TextView
+            android:id="@+id/lblCareInstructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCareInstructionsPrompt"
+            tools:text="care-instructions"
+            android:layout_gravity="start" />
+
+        <TextView
+            android:id="@+id/lblClientPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strClientPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCareInstructions" />
+
+        <TextView
+            android:id="@+id/lblClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="lblClientOnClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toEndOf="@+id/lblClientPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblCareInstructions"
+            tools:text="client-name" />
+
+        <TextView
+            android:id="@+id/lblVetPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strVetPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblClient" />
+
+        <TextView
+            android:id="@+id/lblVet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="lblVetOnClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toEndOf="@+id/lblVetPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblClient"
+            tools:text="vet-name" />
+
+        <ImageView
+            android:id="@+id/imgPet"
+            android:layout_width="@dimen/photo_width"
+            android:layout_height="@dimen/photo_height"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:adjustViewBounds="false"
+            android:background="?attr/colorControlHighlight"
+            android:contentDescription="@string/strPetImage"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

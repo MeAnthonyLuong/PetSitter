@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="luonga.petsitter">
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PetDetailsActivity"
+            android:label="@string/titlePetDetails"
+            android:parentActivityName=".NavActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.NavActivity" />
+        </activity>
+        <activity
+            android:name=".EditPetActivity"
+            android:label="@string/titleAddPet"
+            android:parentActivityName=".NavActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.PetDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".ClientDetailsActivity"
+            android:label="@string/strClientDetailsTitle"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.NavActivity" />
+        </activity>
+        <activity
+            android:name=".EditClientActivity"
+            android:label="@string/titleEditClient"
+            android:parentActivityName=".ClientDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.ClientDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".VetDetailsActivity"
+            android:label="@string/titleVetDetails"
+            android:parentActivityName=".NavActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.NavActivity" />
+        </activity>
+        <activity
+            android:name=".EditVetActivity"
+            android:label="@string/titleEditVet"
+            android:parentActivityName=".VetDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="luonga.petsitter.VetDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/titlePreferences"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NavActivity"
+            android:label="@string/title_activity_nav"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

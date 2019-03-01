@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luonga.petsitter.EditPetActivity"
+    tools:showIn="@layout/activity_edit_pet">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- name -->
+        <TextView
+            android:id="@+id/lblNamePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtName"
+            android:text="@string/strNamePrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtName" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:ems="10"
+            android:inputType="textCapWords|textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblNamePrompt"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- year of birth -->
+        <TextView
+            android:id="@+id/lblBirthYearPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtBirthYear"
+            android:text="@string/strBirthYearPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtBirthYear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtBirthYear" />
+
+        <EditText
+            android:id="@+id/txtBirthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblBirthYearPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <!-- species/breed -->
+        <TextView
+            android:id="@+id/lblSpecieBreedPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtSpeciesBreed"
+            android:text="@string/strSpeciesBreedPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtSpeciesBreed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtSpeciesBreed" />
+
+        <EditText
+            android:id="@+id/txtSpeciesBreed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:ems="10"
+            android:inputType="textCapWords"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblSpecieBreedPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/txtBirthYear" />
+
+        <!-- gender -->
+        <RadioGroup
+            android:id="@+id/rgrpGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:checkedButton="@+id/rbtnIntactMale"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSpeciesBreed">
+
+            <RadioButton
+                android:id="@+id/rbtnIntactMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strIntactMale"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/rbtnNeuteredMale"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="@string/strNeuteredMale"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/rbtnIntactFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strIntactFemale"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioButton
+                android:id="@+id/rbtnSpayedFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/strSpayedFemale"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RadioGroup>
+
+        <!-- image -->
+        <ImageButton
+            android:id="@+id/ibtnPet"
+            android:layout_width="@dimen/photo_width"
+            android:layout_height="@dimen/photo_height"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:contentDescription="@string/strPetImage"
+            android:onClick="ibtnPetOnClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgrpGender" />
+
+        <TextView
+            android:id="@+id/lblPhotoPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strPhotoPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgrpGender" />
+
+        <TextView
+            android:id="@+id/lblGenderPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strGenderPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSpeciesBreed" />
+
+        <!-- care -->
+        <TextView
+            android:id="@+id/lblCareInstructionsPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strCareInstructionsPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtnPet" />
+
+        <EditText
+            android:id="@+id/txtCareInstructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:ems="10"
+            android:inputType="textCapSentences|textMultiLine"
+            android:labelFor="@+id/txtCareInstructions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCareInstructionsPrompt" />
+
+        <!-- client -->
+        <TextView
+            android:id="@+id/lblClientPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtClient"
+            android:text="@string/strClientPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/spnClient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spnClient" />
+
+        <Spinner
+            android:id="@+id/spnClient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:enabled="true"
+            app:layout_constraintBottom_toTopOf="@+id/ibtnAddVet"
+            app:layout_constraintEnd_toStartOf="@+id/ibtnAddClient"
+            app:layout_constraintStart_toEndOf="@+id/lblClientPrompt"
+            app:layout_constraintTop_toTopOf="@+id/ibtnAddClient" />
+
+        <ImageButton
+            android:id="@+id/ibtnAddClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:contentDescription="@string/descAdd"
+            android:onClick="btnAddClientOnClick"
+            android:paddingBottom="@dimen/space_md"
+            android:paddingTop="@dimen/space_md"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCareInstructions" />
+
+        <!-- vet -->
+        <TextView
+            android:id="@+id/lblVetPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtVet"
+            android:text="@string/strVetPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="@+id/spnVet"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/spnVet" />
+
+        <Spinner
+            android:id="@+id/spnVet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:enabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/ibtnAddVet"
+            app:layout_constraintEnd_toStartOf="@+id/ibtnAddVet"
+            app:layout_constraintStart_toEndOf="@+id/lblVetPrompt"
+            app:layout_constraintTop_toTopOf="@+id/ibtnAddVet" />
+
+        <ImageButton
+            android:id="@+id/ibtnAddVet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:contentDescription="@string/descAdd"
+            android:onClick="btnAddVetOnClick"
+            android:paddingBottom="@dimen/space_md"
+            android:paddingTop="@dimen/space_md"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibtnAddClient" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

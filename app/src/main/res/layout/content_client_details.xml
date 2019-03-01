@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luonga.petsitter.ClientDetailsActivity"
+    tools:showIn="@layout/activity_client_details">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- name -->
+        <TextView
+            android:id="@+id/lblLastNamePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center_vertical"
+            android:text="@string/strLastNamePrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblFirstNamePrompt" />
+
+        <TextView
+            android:id="@+id/lblLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/lblLastNamePrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblFirstName"
+            tools:text="Flintstone" />
+
+        <TextView
+            android:id="@+id/lblFirstNamePrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center_vertical"
+            android:text="@string/strFirstNamePrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/lblFirstNamePrompt"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fred" />
+
+        <!-- cell -->
+        <TextView
+            android:id="@+id/lblCellPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:text="@string/strCellPrompt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblLastNamePrompt" />
+
+        <TextView
+            android:id="@+id/lblCell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:onClick="lblCellOnClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toEndOf="@+id/lblCellPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblLastName"
+            tools:text="111.222.3333" />
+
+        <!-- email -->
+        <TextView
+            android:id="@+id/lblEmailPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center_vertical"
+            android:text="@string/strEmailPrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblCellPrompt" />
+
+        <TextView
+            android:id="@+id/lblEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:onClick="lblEmailOnClick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toEndOf="@+id/lblEmailPrompt"
+            app:layout_constraintTop_toBottomOf="@+id/lblCell"
+            tools:text="f.flintstone@bedrock.com" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

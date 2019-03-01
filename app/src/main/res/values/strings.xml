@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">PetSitter</string>
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="titlePets">Pets</string>
+    <string name="titleClients">Clients</string>
+    <string name="titleVets">Vets</string>
+    <!-- Action Bar Menu Items -->
+    <string name="action_settings">Preferences</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="action_done">done</string>
+    <string name="action_edit">edit</string>
+    <string name="action_delete">delete</string>
+    <!-- Pet Details -->
+    <string name="titlePetDetails">Pet Details</string>
+    <string name="strNamePrompt">Name:</string>
+    <string name="strBirthYearPrompt">Year of Birth:</string>
+    <string name="strSpeciesBreedPrompt">Species/Breed:</string>
+    <string name="strGenderPrompt">Gender:</string>
+    <string name="strIntactMale">intact male</string>
+    <string name="strNeuteredMale">neutered male</string>
+    <string name="strIntactFemale">intact female</string>
+    <string name="strSpayedFemale">spayed female</string>
+    <string name="strCareInstructionsPrompt">Care Instructions:</string>
+    <string name="strClientPrompt">Client:</string>
+    <string name="strVetPrompt">Vet:</string>
+    <string name="descAdd">add</string>
+    <string name="strPetImage">pet image</string>
+    <!-- Edit Pet -->
+    <string name="titleAddPet">Add Pet</string>
+    <string name="titleEditPet">Edit Pet</string>
+    <string name="strPhotoPrompt">Photo:</string>
+    <!-- Pet List -->
+    <string name="titlePetList">Pet List</string>
+    <string name="descFind">find</string>
+    <!-- Preferences -->
+    <string name="titlePreferences">Preferences</string>
+    <string name="strWhenListingPetsIncludePrompt">When listing pets, include:</string>
+    <string name="strBreedSpecies">breed/species</string>
+    <string name="strSortPetsPrompt">Sort pets:</string>
+    <string name="strAZTitle">A-Z</string>
+    <string name="strZATitle">Z-A</string>
+    <string name="strNotificationsPrompt">Notifications:</string>
+    <string name="strWarnBeforeDeletingAPet">warn before deleting a pet</string>
+    <string name="strWarnBeforeDeletingAVet">warn before deleting a vet</string>
+    <string name="strWarnBeforeDeletingAClient">warn before deleting a client</string>
+    <string name="strOff">off</string>
+    <string name="strOn">on</string>
+    <!-- Vet Details -->
+    <string name="titleVetDetails">Vet Details</string>
+    <string name="strLastNamePrompt">Last Name:</string>
+    <string name="strFirstNamePrompt">First Name:</string>
+    <string name="strClinicPrompt">Clinic:</string>
+    <string name="strPhonePrompt">Phone:</string>
+    <string name="strAddressPrompt">Address:</string>
+    <!-- Edit Vet -->
+    <string name="titleEditVet">Edit Vet</string>
+    <string name="titleAddVet">Add Vet</string>
+    <!-- Client Details -->
+    <string name="strClientDetailsTitle">Client Details</string>
+    <string name="strCellPrompt">Cell:</string>
+    <string name="strEmailPrompt">Email:</string>
+    <!-- Edit Client -->
+    <string name="titleEditClient">Edit Client</string>
+    <string name="titleAddClient">Add Client</string>
+    <!-- Home Screen -->
+    <string name="descPets">pets</string>
+    <!-- Client List -->
+    <string name="titleClientList">Client List</string>
+    <!-- Vet List -->
+    <string name="titleVetList">Vet List</string>
+    <!-- Arrays -->
+    <string-array name="arrGenders">
+        <item>@string/strIntactMale</item>
+        <item>@string/strNeuteredMale</item>
+        <item>@string/strIntactFemale</item>
+        <item>@string/strSpayedFemale</item>
+    </string-array>
+</resources>

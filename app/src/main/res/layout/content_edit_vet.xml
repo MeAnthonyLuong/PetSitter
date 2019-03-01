@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="luonga.petsitter.EditVetActivity"
+    tools:showIn="@layout/activity_edit_vet">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- name -->
+        <TextView
+            android:id="@+id/lblLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtLastName"
+            android:text="@string/strLastNamePrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtLastName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtLastName" />
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:focusable="true"
+            android:inputType="textCapWords|textPersonName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblLastName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Rubble" />
+
+        <TextView
+            android:id="@+id/lblFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtFirstName"
+            android:text="@string/strFirstNamePrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtFirstName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtFirstName" />
+
+        <EditText
+            android:id="@+id/txtFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:focusable="true"
+            android:inputType="textCapWords|textPersonName"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/txtLastName"
+            tools:text="Barney" />
+
+        <!-- clinic -->
+        <TextView
+            android:id="@+id/lblClinic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center_vertical"
+            android:labelFor="@+id/txtClinic"
+            android:text="@string/strClinicPrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtClinic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtClinic" />
+
+        <EditText
+            android:id="@+id/txtClinic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:focusable="true"
+            android:inputType="text|textCapWords"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblClinic"
+            app:layout_constraintTop_toBottomOf="@+id/txtFirstName"
+            tools:text="Rubble Vet Clinic" />
+
+        <!-- phone -->
+        <TextView
+            android:id="@+id/lblPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtPhone"
+            android:text="@string/strPhonePrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtPhone" />
+
+        <EditText
+            android:id="@+id/txtPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:focusable="true"
+            android:inputType="phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lblPhone"
+            app:layout_constraintTop_toBottomOf="@+id/txtClinic"
+            tools:text="555.666.7777" />
+
+        <!-- address -->
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:labelFor="@+id/txtAddress"
+            android:text="@string/strAddressPrompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhone" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_sm"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_marginTop="@dimen/space_sm"
+            android:focusable="true"
+            android:inputType="textMultiLine|textPostalAddress"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblAddress"
+            tools:text="123 Maple St., Pleasant Grove, WA" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
